@@ -1,5 +1,7 @@
 # The Apparent Paradox of Irrelevance
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19560593.svg)](https://doi.org/10.5281/zenodo.19560593)
+
 **Why does a coarser feature outperform a finer one for link prediction?**
 
 Under normalized pairwise similarity, k-core consistently beats degree (mean AUC 0.659 vs 0.491) across 65 networks from 20 domains — despite degree being finer-grained. This repository contains the paper, analysis code, and data for the full resolution.

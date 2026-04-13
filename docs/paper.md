@@ -340,6 +340,12 @@ For single-feature normalized similarity link prediction, k-core is the stronges
 
 ---
 
+## Data and Code Availability
+
+All analysis code, held-out network datasets, and pre-computed results are available at https://github.com/Hibryda/apparent-paradox-of-irrelevance and archived at Zenodo (DOI: 10.5281/zenodo.19560593). Development-set networks are drawn from publicly available repositories: Netzschleuder (networks.skewed.de), SNAP (snap.stanford.edu), KONECT (konect.cc), STRING (string-db.org), and BioGRID (thebiogrid.org). Z3 and SymPy verification scripts are included in `src/proof_ceiling_effect.py`. The unified results file (`results/unified_analysis.json`) contains all per-network statistics reported in the paper.
+
+---
+
 ## References
 
 [1] D. Liben-Nowell and J. Kleinberg, "The link-prediction problem for social networks," *Journal of the American Society for Information Science and Technology*, vol. 58, no. 7, pp. 1019--1031, 2007.
