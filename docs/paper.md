@@ -1,6 +1,6 @@
 # The Apparent Paradox of Irrelevance: Fisher Discriminability Explains Feature Performance in Normalized Similarity Link Prediction
 
-**Authors:** Hibryda (hibryda@protonmail.com), Independent Researcher
+**Authors:** Hibryda (hibryda@protonmail.com, ORCID: 0009-0001-7832-0026), Independent Researcher
 
 **Abstract.** Under normalized pairwise similarity, k-core outperforms degree for link prediction (mean AUC 0.659 vs 0.491) across 65 networks from 20 domains and 4 metrics---an apparent paradox since degree carries more raw predictive signal. We resolve this in three steps. First, we prove a ceiling effect: normalized similarity metrics compress variance at rate O(1/mu^2) (Z3-verified: 5 lemmas, 3 theorems; empirically confirmed in 29/30 networks). Second, we show this ceiling is real but not the primary mechanism---variance does not predict AUC (rho = 0.099, p = ns). The correct predictor is signed Fisher's d' (pooled rho = 0.994, n = 130 feature-network pairs). Third, we derive an exact mixture AUC decomposition: AUC = p_e(1 - p_ne) + 0.5 p_e p_ne + (1 - p_e)(1 - p_ne) AUC_continuous. For k-core, ties account for 59% of AUC; the continuous gradient contributes 41%. The resolution is structural: degree is disassortative (tie enrichment ratio 0.54x), while k-core is assortative (TER = 3.58x). Assortativity gates the effect (determines direction); d' determines magnitude. K-core similarity wins in all 65 networks (100%) across all metrics. We also show metric independence---three continuous normalized similarity formulas yield identical AUC on integer-valued features (cross-metric rho = 1.000)---and provide a positional signal diagnostic (Edge-Driven Graph Equivalence, EDGE) that detects excess centrality similarity in 10/20 biological networks versus 3/45 non-biological (Fisher exact p = 0.0002, one-sided). All formal results are verified by the Z3 SMT solver.
 
@@ -22,7 +22,7 @@ First, there is a provable ceiling effect. Normalized similarity metrics of the 
 
 Second, the correct predictor of feature performance is Fisher's discriminability index d', adapted from signal detection theory [10]. Specifically, signed d'---where the sign is determined by the feature's assortativity---predicts AUC with Spearman rho = 0.994 across 130 feature-network pairs (pooled across 65 networks and 2 features). The sign convention is essential: d' is positive when the feature is assortative (edges have higher mean sym than non-edges) and negative when disassortative.
 
-Third, we derive an exact three-term mixture AUC decomposition that separates the contribution of tied scores from the continuous gradient. This decomposition achieves RMSE = 0.000 on 325 observations and reveals that for k-core, the first two terms of Eq. 6 (tie-related) account for 59% of AUC, with the continuous third term contributing the remaining 41%.
+Third, we derive an exact three-term mixture AUC decomposition that separates the contribution of tied scores from the continuous gradient. This decomposition is exact by construction for integer-valued features (RMSE = 0.000 on 195 observations; RMSE = 0.058 across all 325 including continuous features) and reveals that for k-core, the first two terms of Eq. 6 (tie-related) account for 59% of AUC, with the continuous third term contributing the remaining 41%.
 
 The resolution also clarifies how network organization affects prediction performance. K-core decomposition, originally developed to study the resilience of networks under iterative pruning [16, 17], reveals a hierarchical shell structure that governs degree-degree correlations [11, 15]. Our finding that k-core's assortative shell structure drives link prediction performance adds a new dimension to this picture: the same structural hierarchy that determines network robustness also determines how well normalized similarity can separate edges from non-edges.
 
@@ -31,7 +31,7 @@ The resolution is structural, not statistical. Degree is disassortative in most 
 Our contributions are:
 
 1. A formal ceiling effect proof with paradox theorems (L1--L5, P1--P4, T9--T11), verified by Z3 and SymPy, establishing when a coarser feature can outperform a finer one under normalized similarity.
-2. An exact mixture AUC decomposition (RMSE = 0.000) separating tied and continuous contributions.
+2. An exact mixture AUC decomposition for integer-valued features (RMSE = 0.000) separating tied and continuous contributions.
 3. Identification of signed Fisher's d' as the correct predictor of normalized similarity link prediction performance (pooled rho = 0.994; leakage-free rho = 0.996).
 4. Demonstration of metric independence: three normalized similarity formulas yield identical AUC on integer features (rho = 1.000).
 5. Empirical validation on 65 networks spanning 20 domains, with k-core similarity winning 65/65 (100%).
@@ -117,9 +117,9 @@ $$\text{Var}(\text{sym}) \approx \frac{4\,\text{Var}(r)}{(1 + E[r])^4}$$    (5)
 
 where Var(r) and E[r] are computed from the empirical ratio distribution. We call this BL2 (Bridge Lemma 2), replacing the earlier BL1 which assumed the sigma/mu < 0.3 regime.
 
-BL2 achieves R^2 = 0.728 on 325 feature-network pairs across 65 networks, with median absolute percentage error of 11.2% and median ratio of 1.01 (unbiased). For comparison, BL1 achieves R^2 = 0.252 and is applicable to 0 of 31 networks in the sigma/mu < 0.3 regime. BL2 operates without regime restrictions.
+BL2 achieves R^2 = 0.728 on 322 feature-network pairs across 65 networks (3 zero-variance pairs excluded), with median absolute percentage error of 11.2% and median ratio of 1.01 (unbiased). For comparison, BL1 achieves R^2 = 0.252 and is applicable to 0 of 31 networks in the sigma/mu < 0.3 regime. BL2 operates without regime restrictions.
 
-[Figure 1: Scatter plot of BL2-predicted vs. observed Var(sym) for 325 feature-network pairs. Diagonal line shows perfect prediction. R^2 = 0.728. Points colored by feature type (degree, k-core, eigenvector, clustering, random).]
+[Figure 1: Scatter plot of BL2-predicted vs. observed Var(sym) for 322 feature-network pairs. Diagonal line shows perfect prediction. R^2 = 0.728. Points colored by feature type (degree, k-core, eigenvector, clustering, random).]
 
 ### 2.5 Mixture AUC Decomposition
 
@@ -133,7 +133,7 @@ The first term: edge tied (score 1), non-edge not tied (score < 1)---edge always
 
 $$\text{AUC} = p_e(1 - p_{ne}) + 0.5\,p_e\,p_{ne} + (1 - p_e)(1 - p_{ne})\,\text{AUC}_{\text{continuous}}$$    (6)
 
-The exactness depends on the maximum-score property: S(a,a) = 1 is the unique maximum of the similarity function, so all ties share the same score and dominate all non-ties. This decomposition is exact. On 325 feature-network observations across 65 networks and 5 features, it achieves RMSE = 0.000 (machine precision). By comparison, a simple Gaussian d'-to-AUC conversion achieves RMSE = 0.007---adequate but not exact, confirming that the mixture structure matters.
+The exactness depends on the maximum-score property: S(a,a) = 1 is the unique maximum of the similarity function, so all ties share the same score and dominate all non-ties. For integer-valued features (degree, k-core, random control), the decomposition is exact by construction: same-value pairs always map to score 1.0 and no other score values coincide, so the four-case partition is exhaustive. This yields RMSE = 0.000 across 195 integer-feature observations. For continuous features (clustering coefficient, eigenvector centrality), score ties can occur at values below 1 that are not captured by p_e and p_{ne}, yielding RMSE = 0.130 for clustering and 0.000236 for eigenvector (aggregate RMSE = 0.058 across all 325 observations). By comparison, a simple Gaussian d'-to-AUC conversion achieves RMSE = 0.007 on integer features---adequate but not exact, confirming that the mixture structure matters.
 
 Empirically, the tie component is dominant. For k-core similarity, the mean tie rate among edges is p_e = 0.472 versus p_{ne} = 0.297 among non-edges, yielding a tie enrichment ratio (TER) of 3.58x. The binary match component (ties only) contributes mean AUC = 0.587; the continuous gradient adds 0.072.
 
@@ -332,7 +332,7 @@ Several limitations deserve mention.
 
 The apparent paradox of irrelevance---that k-core similarity outperforms degree similarity despite containing less information---dissolves when examined closely. The paradox rests on a false premise: that raw signal strength predicts performance under normalized similarity. It does not. Fisher's discriminability d', combined with a sign convention derived from feature assortativity, predicts AUC with Spearman rho = 0.994 across 65 networks spanning 20 domains (n = 130 feature-network pairs).
 
-The mechanism is structural. K-core is assortative; degree is disassortative. The normalized similarity formula S(a,a) = 1 turns it into an assortativity detector that rewards features where same-value pairs are overrepresented among edges. An exact mixture AUC decomposition (RMSE = 0.000) quantifies this: ties account for 59% of AUC, with the continuous gradient contributing 41%. The formal ceiling effect (L1--L5, P1--P4, T9--T11) is mathematically real but secondary---it compresses the continuous component (41% of AUC) without driving the performance gap, which originates in the tie component (59%).
+The mechanism is structural. K-core is assortative; degree is disassortative. The normalized similarity formula S(a,a) = 1 turns it into an assortativity detector that rewards features where same-value pairs are overrepresented among edges. An exact mixture AUC decomposition (RMSE = 0.000 for integer features) quantifies this: ties account for 59% of AUC, with the continuous gradient contributing 41%. The formal ceiling effect (L1--L5, P1--P4, T9--T11) is mathematically real but secondary---it compresses the continuous component (41% of AUC) without driving the performance gap, which originates in the tie component (59%).
 
 The paper makes three contributions. First, a formal framework: Z3-verified proofs of the ceiling effect and paradox conditions, plus a distribution-free variance predictor (BL2, R^2 = 0.728). Second, an analytical decomposition: the exact mixture AUC formula and the identification of signed d' as the correct performance predictor. Third, empirical validation at scale: 65 networks, 20 domains, k-core winning 65/65 (100%).
 
@@ -342,7 +342,7 @@ For single-feature normalized similarity link prediction, k-core is the stronges
 
 ## Data and Code Availability
 
-All analysis code, held-out network datasets, and pre-computed results are available at https://github.com/Hibryda/apparent-paradox-of-irrelevance and archived at Zenodo (DOI: 10.5281/zenodo.19560593). Development-set networks are drawn from publicly available repositories: Netzschleuder (networks.skewed.de), SNAP (snap.stanford.edu), KONECT (konect.cc), STRING (string-db.org), and BioGRID (thebiogrid.org). Z3 and SymPy verification scripts are included in `src/proof_ceiling_effect.py`. The unified results file (`results/unified_analysis.json`) contains all per-network statistics reported in the paper.
+All analysis code, held-out network datasets, and pre-computed results are archived at Zenodo (DOI: 10.5281/zenodo.19560593) and available at https://github.com/Hibryda/apparent-paradox-of-irrelevance. Development-set networks are drawn from publicly available repositories: Netzschleuder, SNAP, KONECT, STRING, and BioGRID. Z3 and SymPy verification scripts, unified per-network results, and all analysis code are included in the repository.
 
 ---
 
