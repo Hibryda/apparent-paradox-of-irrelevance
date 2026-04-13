@@ -1,0 +1,920 @@
+{
+  "n": 65,
+  "n_signal": 13,
+  "bio_sig": 10,
+  "bio_total": 20,
+  "nonbio_sig": 3,
+  "nonbio_total": 45,
+  "per_network": [
+    {
+      "network": "C. elegans Gene Network",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "other",
+      "edge": {
+        "real_gap": 0.20195,
+        "null_mean": 0.15937,
+        "excess": 0.04258,
+        "z": 4.63,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "C. elegans Protein-Gene",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "other",
+      "edge": {
+        "real_gap": 0.25022,
+        "null_mean": 0.29351,
+        "excess": -0.04329,
+        "z": -6.21,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "S. cerevisiae (Yeast)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_yeast",
+      "edge": {
+        "real_gap": 0.02355,
+        "null_mean": 0.09252,
+        "excess": -0.06897,
+        "z": -18.31,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "D. melanogaster (Fly) Cortex",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_fly",
+      "edge": {
+        "real_gap": 0.21138,
+        "null_mean": 0.1764,
+        "excess": 0.03498,
+        "z": 4.48,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "H. sapiens Cortex",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_human",
+      "edge": {
+        "real_gap": 0.21331,
+        "null_mean": 0.17899,
+        "excess": 0.03432,
+        "z": 3.47,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "Bitcoin OTC Trust",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.29309,
+        "null_mean": 0.52222,
+        "excess": -0.22913,
+        "z": -15.26,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Bitcoin Alpha Trust",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.29478,
+        "null_mean": 0.49808,
+        "excess": -0.2033,
+        "z": -11.96,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Epinions Trust",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.1189,
+        "null_mean": 0.47438,
+        "excess": -0.35548,
+        "z": -32.46,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Yeast PPI (STRING)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "ppi",
+      "edge": {
+        "real_gap": 0.21676,
+        "null_mean": 0.15779,
+        "excess": 0.05897,
+        "z": 4.59,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "Mouse PPI (STRING)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "ppi",
+      "edge": {
+        "real_gap": 0.29965,
+        "null_mean": 0.29622,
+        "excess": 0.00343,
+        "z": 0.25,
+        "p": 0.333,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "D. rerio (Zebrafish) Cortex",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_zebrafish",
+      "edge": {
+        "real_gap": 0.15634,
+        "null_mean": 0.12773,
+        "excess": 0.02861,
+        "z": 3.27,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "C. elegans Genetic",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "other",
+      "edge": {
+        "real_gap": 0.0383,
+        "null_mean": 0.1416,
+        "excess": -0.1033,
+        "z": -14.89,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "S. cerevisiae Genetic",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "other",
+      "edge": {
+        "real_gap": 0.20098,
+        "null_mean": 0.204,
+        "excess": -0.00302,
+        "z": -0.34,
+        "p": 0.667,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Slashdot Trust",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.17264,
+        "null_mean": 0.46836,
+        "excess": -0.29572,
+        "z": -27.1,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Wikipedia RfA Votes",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.3994,
+        "null_mean": 0.5114,
+        "excess": -0.11201,
+        "z": -8.64,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "S. cerevisiae High-throughput (SC-HT)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_yeast",
+      "edge": {
+        "real_gap": 0.21366,
+        "null_mean": 0.24161,
+        "excess": -0.02795,
+        "z": -4.16,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "S. cerevisiae Lit-curated (SC-LC)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_yeast",
+      "edge": {
+        "real_gap": 0.22731,
+        "null_mean": 0.1877,
+        "excess": 0.03961,
+        "z": 2.99,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "H. sapiens High-throughput (HS-HT)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "biology_human",
+      "edge": {
+        "real_gap": 0.32447,
+        "null_mean": 0.33702,
+        "excess": -0.01255,
+        "z": -1.04,
+        "p": 0.8,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Drosophila Larva Brain",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "connectome",
+      "edge": {
+        "real_gap": 0.10174,
+        "null_mean": 0.01967,
+        "excess": 0.08206,
+        "z": 12.57,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "Budapest Human Connectome",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "connectome",
+      "edge": {
+        "real_gap": 0.02978,
+        "null_mean": 0.01478,
+        "excess": 0.01499,
+        "z": 5.57,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "C. elegans Synapse (2019)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "connectome",
+      "edge": {
+        "real_gap": 0.10987,
+        "null_mean": 0.08671,
+        "excess": 0.02316,
+        "z": 2.8,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "Florida Bay Food Web (wet)",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "ecology",
+      "edge": {
+        "real_gap": 0.02659,
+        "null_mean": 0.01851,
+        "excess": 0.00808,
+        "z": 2.56,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "Kato Plant-Pollinator",
+      "corpus": "dev",
+      "is_bio": true,
+      "domain": "ecology_bipartite",
+      "edge": {
+        "real_gap": 0.02977,
+        "null_mean": 0.42597,
+        "excess": -0.3962,
+        "z": -46.05,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "US Airport 500",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "infrastructure",
+      "edge": {
+        "real_gap": 0.13707,
+        "null_mean": 0.20182,
+        "excess": -0.06474,
+        "z": -5.42,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Product Space (HS)",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "economic",
+      "edge": {
+        "real_gap": 0.36975,
+        "null_mean": 0.44813,
+        "excess": -0.07839,
+        "z": -9.78,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Network Science Collab",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "collaboration",
+      "edge": {
+        "real_gap": 0.02584,
+        "null_mean": 0.11275,
+        "excess": -0.08691,
+        "z": -8.14,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Bible Noun Co-occurrence",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "linguistic",
+      "edge": {
+        "real_gap": -0.02,
+        "null_mean": 0.2769,
+        "excess": -0.2969,
+        "z": -25.67,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "Word Association (EAT)",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "cognitive",
+      "edge": {
+        "real_gap": 0.298,
+        "null_mean": 0.42508,
+        "excess": -0.12708,
+        "z": -8.44,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "UN Migration (2000)",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "migration",
+      "edge": {
+        "real_gap": -0.039,
+        "null_mean": -0.02834,
+        "excess": -0.01066,
+        "z": -2.35,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "US Congress Senate 100th",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "political",
+      "edge": {
+        "real_gap": -0.00569,
+        "null_mean": 0.01786,
+        "excess": -0.02355,
+        "z": -3.49,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "IEEE 300-bus Power Grid",
+      "corpus": "dev",
+      "is_bio": false,
+      "domain": "power_grid",
+      "edge": {
+        "real_gap": 0.21953,
+        "null_mean": 0.27823,
+        "excess": -0.05869,
+        "z": -1.96,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "ego_social/facebook_0",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.20221,
+        "null_mean": 0.15093,
+        "excess": 0.05128,
+        "z": 4.92,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "ugandan_village/friendship-1",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.10115,
+        "null_mean": 0.13761,
+        "excess": -0.03646,
+        "z": -2.04,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "route_views/19971108",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "tech",
+      "edge": {
+        "real_gap": 0.00837,
+        "null_mean": 0.36294,
+        "excess": -0.35457,
+        "z": -36.1,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "webkb/webkb_wisconsin_link1",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "tech",
+      "edge": {
+        "real_gap": 0.28592,
+        "null_mean": 0.34196,
+        "excess": -0.05604,
+        "z": -2.33,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "ecoli_transcription/v1.0",
+      "corpus": "held-out-1",
+      "is_bio": true,
+      "domain": "bio",
+      "edge": {
+        "real_gap": 0.08555,
+        "null_mean": 0.41531,
+        "excess": -0.32976,
+        "z": -18.08,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "fresh_webs/AkatoreA",
+      "corpus": "held-out-1",
+      "is_bio": true,
+      "domain": "bio",
+      "edge": {
+        "real_gap": 0.16672,
+        "null_mean": 0.33213,
+        "excess": -0.16541,
+        "z": -7.36,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "eu_procurements_alt/AT_2008",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "econ",
+      "edge": {
+        "real_gap": -0.24727,
+        "null_mean": 0.35188,
+        "excess": -0.59915,
+        "z": -88.62,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "faculty_hiring/computer_science",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "econ",
+      "edge": {
+        "real_gap": 0.02212,
+        "null_mean": 0.0317,
+        "excess": -0.00957,
+        "z": -1.24,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "urban_streets/ahmedabad",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "infra",
+      "edge": {
+        "real_gap": 0.21038,
+        "null_mean": 0.22535,
+        "excess": -0.01498,
+        "z": -1.51,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "openstreetmap/01-AL-cities-street_networks:0100124_Abbeville",
+      "corpus": "held-out-1",
+      "is_bio": false,
+      "domain": "infra",
+      "edge": {
+        "real_gap": 0.20023,
+        "null_mean": 0.27143,
+        "excess": -0.0712,
+        "z": -2.58,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "uni_email",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "communication",
+      "edge": {
+        "real_gap": 0.23094,
+        "null_mean": 0.22349,
+        "excess": 0.00745,
+        "z": 0.66,
+        "p": 0.267,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "dnc",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "communication",
+      "edge": {
+        "real_gap": 0.33065,
+        "null_mean": 0.56514,
+        "excess": -0.23449,
+        "z": -33.59,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "cora",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "citation",
+      "edge": {
+        "real_gap": 0.25985,
+        "null_mean": 0.35933,
+        "excess": -0.09948,
+        "z": -2.43,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "dblp_cite",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "citation",
+      "edge": {
+        "real_gap": 0.2201,
+        "null_mean": 0.42558,
+        "excess": -0.20549,
+        "z": -16.08,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "jung",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "software",
+      "edge": {
+        "real_gap": 0.28499,
+        "null_mean": 0.47502,
+        "excess": -0.19003,
+        "z": -21.59,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "linux",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "software",
+      "edge": {
+        "real_gap": 0.03134,
+        "null_mean": 0.36954,
+        "excess": -0.3382,
+        "z": -25.93,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "eu_airlines",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "transportation",
+      "edge": {
+        "real_gap": 0.24441,
+        "null_mean": 0.33213,
+        "excess": -0.08772,
+        "z": -7.26,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "euroroad",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "transportation",
+      "edge": {
+        "real_gap": 0.28053,
+        "null_mean": 0.21588,
+        "excess": 0.06465,
+        "z": 3.07,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "jazz_collab",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "collaboration",
+      "edge": {
+        "real_gap": 0.08527,
+        "null_mean": 0.09199,
+        "excess": -0.00672,
+        "z": -1.05,
+        "p": 0.933,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "new_zealand_collab",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "collaboration",
+      "edge": {
+        "real_gap": 0.03224,
+        "null_mean": 0.2526,
+        "excess": -0.22036,
+        "z": -18.72,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "internet_as",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "technological",
+      "edge": {
+        "real_gap": -0.02567,
+        "null_mean": 0.32139,
+        "excess": -0.34705,
+        "z": -25.72,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "polblogs",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "political",
+      "edge": {
+        "real_gap": 0.20399,
+        "null_mean": 0.26891,
+        "excess": -0.06492,
+        "z": -6.66,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "foodweb_little_rock",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "ecological",
+      "edge": {
+        "real_gap": 0.08041,
+        "null_mean": 0.09952,
+        "excess": -0.01912,
+        "z": -4.24,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "celegans_metabolic",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "ecological",
+      "edge": {
+        "real_gap": -0.09933,
+        "null_mean": 0.00849,
+        "excess": -0.10782,
+        "z": -20.65,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "fao_trade",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "economic",
+      "edge": {
+        "real_gap": 0.11996,
+        "null_mean": 0.10897,
+        "excess": 0.01099,
+        "z": 2.15,
+        "p": 0.0,
+        "is_signal": true
+      }
+    },
+    {
+      "network": "dolphins",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "social",
+      "edge": {
+        "real_gap": 0.18154,
+        "null_mean": 0.2577,
+        "excess": -0.07616,
+        "z": -2.08,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "LFR_mu0.1",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_LFR",
+      "edge": {
+        "real_gap": 0.02306,
+        "null_mean": 0.05638,
+        "excess": -0.03332,
+        "z": -3.64,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "LFR_mu0.3",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_LFR",
+      "edge": {
+        "real_gap": 0.00622,
+        "null_mean": 0.00872,
+        "excess": -0.00249,
+        "z": -0.5,
+        "p": 0.667,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "LFR_mu0.5",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_LFR",
+      "edge": {
+        "real_gap": -0.00446,
+        "null_mean": -0.00152,
+        "excess": -0.00294,
+        "z": -1.18,
+        "p": 0.867,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "BA_m2",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_BA",
+      "edge": {
+        "real_gap": 0.00164,
+        "null_mean": 0.30023,
+        "excess": -0.2986,
+        "z": -25.27,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "BA_m5",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_BA",
+      "edge": {
+        "real_gap": 0.03614,
+        "null_mean": 0.19232,
+        "excess": -0.15618,
+        "z": -8.0,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "WS_p0.01",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_WS",
+      "edge": {
+        "real_gap": 0.00363,
+        "null_mean": 0.02524,
+        "excess": -0.02161,
+        "z": -3.88,
+        "p": 1.0,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "WS_p0.5",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_WS",
+      "edge": {
+        "real_gap": 0.02633,
+        "null_mean": 0.02109,
+        "excess": 0.00524,
+        "z": 0.84,
+        "p": 0.2,
+        "is_signal": false
+      }
+    },
+    {
+      "network": "SBM_3x200",
+      "corpus": "expanded",
+      "is_bio": false,
+      "domain": "synthetic_SBM",
+      "edge": {
+        "real_gap": 0.01107,
+        "null_mean": 0.0097,
+        "excess": 0.00136,
+        "z": 0.41,
+        "p": 0.467,
+        "is_signal": false
+      }
+    }
+  ]
+}

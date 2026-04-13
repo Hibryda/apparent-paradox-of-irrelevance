@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "description": "Held-out validation of d' -> AUC relationship",
+    "n_networks_total": 10,
+    "n_real": 10,
+    "n_lfr": 0,
+    "domain_counts": {
+      "social": 2,
+      "tech": 2,
+      "bio": 2,
+      "econ": 2,
+      "infra": 2
+    },
+    "max_edges": 3000,
+    "max_nonedges": 3000,
+    "rng_seed": 42,
+    "dev_set_reference": {
+      "rho": 0.956,
+      "ci_95_lo": 0.865,
+      "ci_95_hi": 0.986,
+      "n_networks": 31
+    },
+    "runtime_sec": 1.3
+  },
+  "per_network": [
+    {
+      "network": "ego_social/facebook_0",
+      "domain": "social",
+      "source": "netzschleuder",
+      "n_nodes": 324,
+      "n_edges": 2514,
+      "n_sampled_edges": 2514,
+      "n_sampled_nonedges": 2514,
+      "features": {
+        "degree": {
+          "auc": 0.6801088130811133,
+          "auc_abs": 0.6801088130811133,
+          "dprime": 0.6834028887572069,
+          "dprime_signed": 0.6834028887572069,
+          "auc_gaussian": 0.6855369116233281,
+          "sym_mean_edge": 0.6869212683700451,
+          "sym_mean_nonedge": 0.5138418292668927,
+          "assortative": true,
+          "tie_rate_edge": 0.034606205250596656,
+          "tie_rate_nonedge": 0.031821797931583136
+        },
+        "kcore": {
+          "auc": 0.8285301595077115,
+          "auc_abs": 0.8285301595077115,
+          "dprime": 1.321465698641434,
+          "dprime_signed": 1.321465698641434,
+          "auc_gaussian": 0.8249556759869433,
+          "sym_mean_edge": 0.8715306968367078,
+          "sym_mean_nonedge": 0.5803511132647112,
+          "assortative": true,
+          "tie_rate_edge": 0.4291964996022275,
+          "tie_rate_nonedge": 0.05171042163882259
+        }
+      },
+      "degree_assortativity": 0.23295552356572546
+    },
+    {
+      "network": "ugandan_village/friendship-1",
+      "domain": "social",
+      "source": "netzschleuder",
+      "n_nodes": 202,
+      "n_edges": 547,
+      "n_sampled_edges": 547,
+      "n_sampled_nonedges": 547,
+      "features": {
+        "degree": {
+          "auc": 0.506859753550194,
+          "auc_abs": 0.506859753550194,
+          "dprime": 0.05008273817953095,
+          "dprime_signed": 0.05008273817953095,
+          "auc_gaussian": 0.5141251270546051,
+          "sym_mean_edge": 0.6655160399105117,
+          "sym_mean_nonedge": 0.6539946984107886,
+          "assortative": true,
+          "tie_rate_edge": 0.06581352833638025,
+          "tie_rate_nonedge": 0.10968921389396709
+        },
+        "kcore": {
+          "auc": 0.6697793181354839,
+          "auc_abs": 0.6697793181354839,
+          "dprime": 0.6449706422358878,
+          "dprime_signed": 0.6449706422358878,
+          "auc_gaussian": 0.6758277033866966,
+          "sym_mean_edge": 0.922590860991089,
+          "sym_mean_nonedge": 0.8150789864672494,
+          "assortative": true,
+          "tie_rate_edge": 0.6453382084095064,
+          "tie_rate_nonedge": 0.360146252285192
+        }
+      },
+      "degree_assortativity": -0.12909475333335135
+    },
+    {
+      "network": "route_views/19971108",
+      "domain": "tech",
+      "source": "netzschleuder",
+      "n_nodes": 3015,
+      "n_edges": 5156,
+      "n_sampled_edges": 3000,
+      "n_sampled_nonedges": 3000,
+      "features": {
+        "degree": {
+          "auc": 0.10814644444444445,
+          "auc_abs": 0.8918535555555556,
+          "dprime": 1.8189108381945371,
+          "dprime_signed": -1.8189108381945371,
+          "auc_gaussian": 0.9008071167806697,
+          "sym_mean_edge": 0.21676379099308252,
+          "sym_mean_nonedge": 0.6928954608192809,
+          "assortative": false,
+          "tie_rate_edge": 0.017666666666666667,
+          "tie_rate_nonedge": 0.32133333333333336
+        },
+        "kcore": {
+          "auc": 0.2845933333333333,
+          "auc_abs": 0.7154066666666667,
+          "dprime": 0.7577652973685653,
+          "dprime_signed": -0.7577652973685653,
+          "auc_gaussian": 0.703958859614391,
+          "sym_mean_edge": 0.5849558205181835,
+          "sym_mean_nonedge": 0.7669635662839314,
+          "assortative": false,
+          "tie_rate_edge": 0.16733333333333333,
+          "tie_rate_nonedge": 0.386
+        }
+      },
+      "degree_assortativity": -0.22891866576185982
+    },
+    {
+      "network": "webkb/webkb_wisconsin_link1",
+      "domain": "tech",
+      "source": "netzschleuder",
+      "n_nodes": 280,
+      "n_edges": 553,
+      "n_sampled_edges": 553,
+      "n_sampled_nonedges": 553,
+      "features": {
+        "degree": {
+          "auc": 0.3942264616149296,
+          "auc_abs": 0.6057735383850704,
+          "dprime": 0.3599206910169465,
+          "dprime_signed": -0.3599206910169465,
+          "auc_gaussian": 0.6004462599604382,
+          "sym_mean_edge": 0.5392330480141904,
+          "sym_mean_nonedge": 0.6338798127449036,
+          "assortative": false,
+          "tie_rate_edge": 0.05786618444846293,
+          "tie_rate_nonedge": 0.16636528028933092
+        },
+        "kcore": {
+          "auc": 0.6811146826940999,
+          "auc_abs": 0.6811146826940999,
+          "dprime": 0.7091581202815433,
+          "dprime_signed": 0.7091581202815433,
+          "auc_gaussian": 0.6919729522674579,
+          "sym_mean_edge": 0.8644617674400735,
+          "sym_mean_nonedge": 0.7207807354240403,
+          "assortative": true,
+          "tie_rate_edge": 0.5497287522603979,
+          "tie_rate_nonedge": 0.2875226039783002
+        }
+      },
+      "degree_assortativity": -0.11867832300023286
+    },
+    {
+      "network": "ecoli_transcription/v1.0",
+      "domain": "bio",
+      "source": "netzschleuder",
+      "n_nodes": 329,
+      "n_edges": 456,
+      "n_sampled_edges": 456,
+      "n_sampled_nonedges": 456,
+      "features": {
+        "degree": {
+          "auc": 0.17328889658356417,
+          "auc_abs": 0.8267111034164358,
+          "dprime": 1.3286141058878786,
+          "dprime_signed": -1.3286141058878786,
+          "auc_gaussian": 0.8262557804663342,
+          "sym_mean_edge": 0.33402407731667044,
+          "sym_mean_nonedge": 0.6926322618609916,
+          "assortative": false,
+          "tie_rate_edge": 0.03728070175438596,
+          "tie_rate_nonedge": 0.3333333333333333
+        },
+        "kcore": {
+          "auc": 0.5113640735610957,
+          "auc_abs": 0.5113640735610957,
+          "dprime": 0.03372056149002743,
+          "dprime_signed": 0.03372056149002743,
+          "auc_gaussian": 0.5095114934890294,
+          "sym_mean_edge": 0.8045617740709456,
+          "sym_mean_nonedge": 0.7980704904629584,
+          "assortative": true,
+          "tie_rate_edge": 0.42105263157894735,
+          "tie_rate_nonedge": 0.43640350877192985
+        }
+      },
+      "degree_assortativity": -0.26339211375253924
+    },
+    {
+      "network": "fresh_webs/AkatoreA",
+      "domain": "bio",
+      "source": "netzschleuder",
+      "n_nodes": 84,
+      "n_edges": 227,
+      "n_sampled_edges": 227,
+      "n_sampled_nonedges": 227,
+      "features": {
+        "degree": {
+          "auc": 0.4432649575966931,
+          "auc_abs": 0.5567350424033068,
+          "dprime": 0.16901306184552142,
+          "dprime_signed": -0.16901306184552142,
+          "auc_gaussian": 0.5475644527751826,
+          "sym_mean_edge": 0.5069181375320705,
+          "sym_mean_nonedge": 0.5503474910484351,
+          "assortative": false,
+          "tie_rate_edge": 0.013215859030837005,
+          "tie_rate_nonedge": 0.09251101321585903
+        },
+        "kcore": {
+          "auc": 0.7149372198179665,
+          "auc_abs": 0.7149372198179665,
+          "dprime": 0.8081075047623338,
+          "dprime_signed": 0.8081075047623338,
+          "auc_gaussian": 0.7161419352680777,
+          "sym_mean_edge": 0.8406740640054666,
+          "sym_mean_nonedge": 0.6637603432691684,
+          "assortative": true,
+          "tie_rate_edge": 0.4669603524229075,
+          "tie_rate_nonedge": 0.18502202643171806
+        }
+      },
+      "degree_assortativity": -0.374043309135682
+    },
+    {
+      "network": "eu_procurements_alt/AT_2008",
+      "domain": "econ",
+      "source": "netzschleuder",
+      "n_nodes": 1684,
+      "n_edges": 1921,
+      "n_sampled_edges": 1921,
+      "n_sampled_nonedges": 1921,
+      "features": {
+        "degree": {
+          "auc": 0.09064936409302266,
+          "auc_abs": 0.9093506359069774,
+          "dprime": 2.095900699572657,
+          "dprime_signed": -2.095900699572657,
+          "auc_gaussian": 0.9308332579430637,
+          "sym_mean_edge": 0.2346891771948495,
+          "sym_mean_nonedge": 0.7782965377075105,
+          "assortative": false,
+          "tie_rate_edge": 0.01353461738677772,
+          "tie_rate_nonedge": 0.5694950546590317
+        },
+        "kcore": {
+          "auc": 0.33930683659956085,
+          "auc_abs": 0.6606931634004392,
+          "dprime": 0.6542417954907492,
+          "dprime_signed": -0.6542417954907492,
+          "auc_gaussian": 0.6781811883265312,
+          "sym_mean_edge": 0.7773166193769216,
+          "sym_mean_nonedge": 0.8905092713901764,
+          "assortative": false,
+          "tie_rate_edge": 0.3675169182717335,
+          "tie_rate_nonedge": 0.6824570536179073
+        }
+      },
+      "degree_assortativity": -0.3455951330629066
+    },
+    {
+      "network": "faculty_hiring/computer_science",
+      "domain": "econ",
+      "source": "netzschleuder",
+      "n_nodes": 206,
+      "n_edges": 2741,
+      "n_sampled_edges": 2741,
+      "n_sampled_nonedges": 2741,
+      "features": {
+        "degree": {
+          "auc": 0.48020392699080444,
+          "auc_abs": 0.5197960730091955,
+          "dprime": 0.06663632570599178,
+          "dprime_signed": -0.06663632570599178,
+          "auc_gaussian": 0.5187908069426871,
+          "sym_mean_edge": 0.6307947249104227,
+          "sym_mean_nonedge": 0.6461456610453356,
+          "assortative": false,
+          "tie_rate_edge": 0.013863553447646844,
+          "tie_rate_nonedge": 0.02553812477198103
+        },
+        "kcore": {
+          "auc": 0.6836693894289174,
+          "auc_abs": 0.6836693894289174,
+          "dprime": 0.6091835000301387,
+          "dprime_signed": 0.6091835000301387,
+          "auc_gaussian": 0.6666777507740631,
+          "sym_mean_edge": 0.8909374283312198,
+          "sym_mean_nonedge": 0.8049435562964277,
+          "assortative": true,
+          "tie_rate_edge": 0.2572053994892375,
+          "tie_rate_nonedge": 0.06968259759211966
+        }
+      },
+      "degree_assortativity": -0.13750627579128877
+    },
+    {
+      "network": "urban_streets/ahmedabad",
+      "domain": "infra",
+      "source": "netzschleuder",
+      "n_nodes": 2870,
+      "n_edges": 4375,
+      "n_sampled_edges": 3000,
+      "n_sampled_nonedges": 3000,
+      "features": {
+        "degree": {
+          "auc": 0.5140610555555556,
+          "auc_abs": 0.5140610555555556,
+          "dprime": 0.1783180010546722,
+          "dprime_signed": 0.1783180010546722,
+          "auc_gaussian": 0.550169606090337,
+          "sym_mean_edge": 0.9337203089303694,
+          "sym_mean_nonedge": 0.9093560505174255,
+          "assortative": true,
+          "tie_rate_edge": 0.642,
+          "tie_rate_nonedge": 0.6406666666666667
+        },
+        "kcore": {
+          "auc": 0.5335,
+          "auc_abs": 0.5335,
+          "dprime": 0.2681748460723836,
+          "dprime_signed": 0.2681748460723836,
+          "auc_gaussian": 0.5751997765868926,
+          "sym_mean_edge": 0.9884521430157672,
+          "sym_mean_nonedge": 0.9661336886520097,
+          "assortative": true,
+          "tie_rate_edge": 0.9653333333333334,
+          "tie_rate_nonedge": 0.8983333333333333
+        }
+      },
+      "degree_assortativity": 0.024457399399145995
+    },
+    {
+      "network": "openstreetmap/01-AL-cities-street_networks:0100124_Abbeville",
+      "domain": "infra",
+      "source": "netzschleuder",
+      "n_nodes": 351,
+      "n_edges": 434,
+      "n_sampled_edges": 434,
+      "n_sampled_nonedges": 434,
+      "features": {
+        "degree": {
+          "auc": 0.6124705345197392,
+          "auc_abs": 0.6124705345197392,
+          "dprime": 0.4399937973108213,
+          "dprime_signed": 0.4399937973108213,
+          "auc_gaussian": 0.6221462887230613,
+          "sym_mean_edge": 0.8548929072665103,
+          "sym_mean_nonedge": 0.7625775023258787,
+          "assortative": true,
+          "tie_rate_edge": 0.543778801843318,
+          "tie_rate_nonedge": 0.3824884792626728
+        },
+        "kcore": {
+          "auc": 0.663594470046083,
+          "auc_abs": 0.663594470046083,
+          "dprime": 0.7512246728156529,
+          "dprime_signed": 0.7512246728156529,
+          "auc_gaussian": 0.7023585386264128,
+          "sym_mean_edge": 0.9493425274087628,
+          "sym_mean_nonedge": 0.8403522075912525,
+          "assortative": true,
+          "tie_rate_edge": 0.847926267281106,
+          "tie_rate_nonedge": 0.5207373271889401
+        }
+      },
+      "degree_assortativity": 0.041376071795050345
+    }
+  ],
+  "dprime_vs_auc_pooled": {
+    "observed_rho": -0.09022556390977443,
+    "observed_p": 0.7052130308607131,
+    "n_points": 20,
+    "bootstrap_ci_95_lo": -0.6014383561643836,
+    "bootstrap_ci_95_hi": 0.5525535921404301,
+    "bootstrap_median_rho": -0.09943396226415095,
+    "dev_set_rho": 0.956,
+    "dev_set_ci": [
+      0.865,
+      0.986
+    ],
+    "cis_overlap": false
+  },
+  "dprime_vs_auc_abs_pooled": {
+    "description": "d' vs |AUC-0.5|+0.5 \u2014 direction-invariant",
+    "observed_rho": 0.9533834586466164,
+    "observed_p": 8.333045726679196e-11,
+    "n_points": 20,
+    "bootstrap_ci_95_lo": 0.8082012929322611,
+    "bootstrap_ci_95_hi": 0.9908573156799733,
+    "cis_overlap_with_dev": true
+  },
+  "signed_dprime_vs_auc_pooled": {
+    "description": "signed d' vs AUC \u2014 positive d' = assortative",
+    "observed_rho": 0.9744360902255638,
+    "observed_p": 4.0365222137155197e-13,
+    "n_points": 20,
+    "bootstrap_ci_95_lo": 0.8454166666666667,
+    "bootstrap_ci_95_hi": 1.0
+  },
+  "dprime_vs_auc_per_feature": {
+    "degree": {
+      "rho_original": -0.49090909090909085,
+      "p_original": 0.1496556734208368,
+      "n": 10,
+      "ci_95_lo": -0.9999999999999999,
+      "ci_95_hi": 0.3826055194805196,
+      "rho_direction_invariant": 0.9636363636363635,
+      "p_direction_invariant": 7.3209748095299185e-06
+    },
+    "kcore": {
+      "rho_original": 0.3939393939393939,
+      "p_original": 0.25999776683488757,
+      "n": 10,
+      "ci_95_lo": -0.4740504836046237,
+      "ci_95_hi": 0.9614484241872777,
+      "rho_direction_invariant": 0.8060606060606059,
+      "p_direction_invariant": 0.004862061101964607
+    }
+  },
+  "kcore_vs_degree": {
+    "kcore_wins": 10,
+    "degree_wins": 0,
+    "ties": 0,
+    "total": 10,
+    "kcore_win_rate": 1.0
+  },
+  "gaussian_prediction": {
+    "rmse": 0.3249126774642334,
+    "mae": 0.17863145980136336,
+    "n_points": 20
+  }
+}

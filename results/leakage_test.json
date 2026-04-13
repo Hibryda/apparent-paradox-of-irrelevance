@@ -1,0 +1,257 @@
+{
+  "holdout_frac": 0.2,
+  "n_networks": 31,
+  "mean_diff": 0.0471,
+  "max_abs_diff": 0.2123,
+  "n_flagged": 15,
+  "per_network": [
+    {
+      "network": "C. elegans Gene Network",
+      "mean_degree": 43.53,
+      "auc_full": 0.8243,
+      "auc_train": 0.8107,
+      "diff": 0.0135,
+      "sparse": false
+    },
+    {
+      "network": "C. elegans Protein-Gene",
+      "mean_degree": 55.92,
+      "auc_full": 0.8608,
+      "auc_train": 0.8521,
+      "diff": 0.0087,
+      "sparse": false
+    },
+    {
+      "network": "S. cerevisiae (Yeast)",
+      "mean_degree": 27.11,
+      "auc_full": 0.7468,
+      "auc_train": 0.7308,
+      "diff": 0.016,
+      "sparse": false
+    },
+    {
+      "network": "D. melanogaster (Fly) Cortex",
+      "mean_degree": 28.95,
+      "auc_full": 0.7964,
+      "auc_train": 0.7836,
+      "diff": 0.0128,
+      "sparse": false
+    },
+    {
+      "network": "H. sapiens Cortex",
+      "mean_degree": 32.97,
+      "auc_full": 0.8067,
+      "auc_train": 0.7947,
+      "diff": 0.012,
+      "sparse": false
+    },
+    {
+      "network": "Bitcoin OTC Trust",
+      "mean_degree": 6.6,
+      "auc_full": 0.5033,
+      "auc_train": 0.5026,
+      "diff": 0.0007,
+      "sparse": false
+    },
+    {
+      "network": "Bitcoin Alpha Trust",
+      "mean_degree": 7.48,
+      "auc_full": 0.5452,
+      "auc_train": 0.5327,
+      "diff": 0.0125,
+      "sparse": false
+    },
+    {
+      "network": "Epinions Trust",
+      "mean_degree": 3.21,
+      "auc_full": 0.5307,
+      "auc_train": 0.4034,
+      "diff": 0.1273,
+      "sparse": true
+    },
+    {
+      "network": "Yeast PPI (STRING)",
+      "mean_degree": 14.09,
+      "auc_full": 0.812,
+      "auc_train": 0.7765,
+      "diff": 0.0355,
+      "sparse": false
+    },
+    {
+      "network": "Mouse PPI (STRING)",
+      "mean_degree": 5.49,
+      "auc_full": 0.7568,
+      "auc_train": 0.6213,
+      "diff": 0.1356,
+      "sparse": false
+    },
+    {
+      "network": "D. rerio (Zebrafish) Cortex",
+      "mean_degree": 47.75,
+      "auc_full": 0.7783,
+      "auc_train": 0.7649,
+      "diff": 0.0133,
+      "sparse": false
+    },
+    {
+      "network": "C. elegans Genetic",
+      "mean_degree": 7.25,
+      "auc_full": 0.6504,
+      "auc_train": 0.551,
+      "diff": 0.0995,
+      "sparse": false
+    },
+    {
+      "network": "S. cerevisiae Genetic",
+      "mean_degree": 39.79,
+      "auc_full": 0.8368,
+      "auc_train": 0.8263,
+      "diff": 0.0105,
+      "sparse": false
+    },
+    {
+      "network": "Slashdot Trust",
+      "mean_degree": 3.17,
+      "auc_full": 0.519,
+      "auc_train": 0.3878,
+      "diff": 0.1312,
+      "sparse": true
+    },
+    {
+      "network": "Wikipedia RfA Votes",
+      "mean_degree": 17.67,
+      "auc_full": 0.7605,
+      "auc_train": 0.7596,
+      "diff": 0.0009,
+      "sparse": false
+    },
+    {
+      "network": "S. cerevisiae High-throughput (SC-HT)",
+      "mean_degree": 58.38,
+      "auc_full": 0.8282,
+      "auc_train": 0.8224,
+      "diff": 0.0059,
+      "sparse": false
+    },
+    {
+      "network": "S. cerevisiae Lit-curated (SC-LC)",
+      "mean_degree": 20.46,
+      "auc_full": 0.7686,
+      "auc_train": 0.7505,
+      "diff": 0.0181,
+      "sparse": false
+    },
+    {
+      "network": "H. sapiens High-throughput (HS-HT)",
+      "mean_degree": 10.92,
+      "auc_full": 0.7534,
+      "auc_train": 0.7102,
+      "diff": 0.0432,
+      "sparse": false
+    },
+    {
+      "network": "Drosophila Larva Brain",
+      "mean_degree": 65.03,
+      "auc_full": 0.8036,
+      "auc_train": 0.7921,
+      "diff": 0.0115,
+      "sparse": false
+    },
+    {
+      "network": "Budapest Human Connectome",
+      "mean_degree": 139.22,
+      "auc_full": 0.7459,
+      "auc_train": 0.7316,
+      "diff": 0.0143,
+      "sparse": false
+    },
+    {
+      "network": "C. elegans Synapse (2019)",
+      "mean_degree": 18.71,
+      "auc_full": 0.7795,
+      "auc_train": 0.7361,
+      "diff": 0.0434,
+      "sparse": false
+    },
+    {
+      "network": "Florida Bay Food Web (wet)",
+      "mean_degree": 32.42,
+      "auc_full": 0.7176,
+      "auc_train": 0.674,
+      "diff": 0.0436,
+      "sparse": false
+    },
+    {
+      "network": "Kato Plant-Pollinator",
+      "mean_degree": 3.14,
+      "auc_full": 0.3149,
+      "auc_train": 0.3486,
+      "diff": -0.0337,
+      "sparse": true
+    },
+    {
+      "network": "US Airport 500",
+      "mean_degree": 11.92,
+      "auc_full": 0.6658,
+      "auc_train": 0.6489,
+      "diff": 0.0168,
+      "sparse": false
+    },
+    {
+      "network": "Product Space (HS)",
+      "mean_degree": 5.85,
+      "auc_full": 0.6913,
+      "auc_train": 0.6122,
+      "diff": 0.079,
+      "sparse": false
+    },
+    {
+      "network": "Network Science Collab",
+      "mean_degree": 4.82,
+      "auc_full": 0.7366,
+      "auc_train": 0.5843,
+      "diff": 0.1523,
+      "sparse": true
+    },
+    {
+      "network": "Bible Noun Co-occurrence",
+      "mean_degree": 10.61,
+      "auc_full": 0.6502,
+      "auc_train": 0.5937,
+      "diff": 0.0565,
+      "sparse": false
+    },
+    {
+      "network": "Word Association (EAT)",
+      "mean_degree": 5.45,
+      "auc_full": 0.6847,
+      "auc_train": 0.5713,
+      "diff": 0.1134,
+      "sparse": false
+    },
+    {
+      "network": "UN Migration (2000)",
+      "mean_degree": 72.46,
+      "auc_full": 0.7629,
+      "auc_train": 0.7578,
+      "diff": 0.0051,
+      "sparse": false
+    },
+    {
+      "network": "US Congress Senate 100th",
+      "mean_degree": 42.44,
+      "auc_full": 0.6926,
+      "auc_train": 0.6454,
+      "diff": 0.0472,
+      "sparse": false
+    },
+    {
+      "network": "IEEE 300-bus Power Grid",
+      "mean_degree": 2.73,
+      "auc_full": 0.5926,
+      "auc_train": 0.3803,
+      "diff": 0.2123,
+      "sparse": true
+    }
+  ]
+}

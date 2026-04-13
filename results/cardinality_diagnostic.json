@@ -1,0 +1,448 @@
+{
+  "n_networks": 55,
+  "per_network": [
+    {
+      "network": "C. elegans Gene Network",
+      "corpus": "dev",
+      "n_nodes": 1995,
+      "kcore_distinct": 43,
+      "degree_distinct": 167,
+      "ratio": 3.883720930232558
+    },
+    {
+      "network": "C. elegans Protein-Gene",
+      "corpus": "dev",
+      "n_nodes": 1692,
+      "kcore_distinct": 80,
+      "degree_distinct": 254,
+      "ratio": 3.175
+    },
+    {
+      "network": "S. cerevisiae (Yeast)",
+      "corpus": "dev",
+      "n_nodes": 1991,
+      "kcore_distinct": 35,
+      "degree_distinct": 143,
+      "ratio": 4.085714285714285
+    },
+    {
+      "network": "D. melanogaster (Fly) Cortex",
+      "corpus": "dev",
+      "n_nodes": 2928,
+      "kcore_distinct": 50,
+      "degree_distinct": 164,
+      "ratio": 3.28
+    },
+    {
+      "network": "H. sapiens Cortex",
+      "corpus": "dev",
+      "n_nodes": 2895,
+      "kcore_distinct": 59,
+      "degree_distinct": 183,
+      "ratio": 3.1016949152542375
+    },
+    {
+      "network": "Bitcoin OTC Trust",
+      "corpus": "dev",
+      "n_nodes": 4762,
+      "kcore_distinct": 18,
+      "degree_distinct": 114,
+      "ratio": 6.333333333333333
+    },
+    {
+      "network": "Bitcoin Alpha Trust",
+      "corpus": "dev",
+      "n_nodes": 3775,
+      "kcore_distinct": 19,
+      "degree_distinct": 113,
+      "ratio": 5.947368421052632
+    },
+    {
+      "network": "Epinions Trust",
+      "corpus": "dev",
+      "n_nodes": 656,
+      "kcore_distinct": 6,
+      "degree_distinct": 29,
+      "ratio": 4.833333333333333
+    },
+    {
+      "network": "Yeast PPI (STRING)",
+      "corpus": "dev",
+      "n_nodes": 1746,
+      "kcore_distinct": 43,
+      "degree_distinct": 101,
+      "ratio": 2.3488372093023258
+    },
+    {
+      "network": "Mouse PPI (STRING)",
+      "corpus": "dev",
+      "n_nodes": 1180,
+      "kcore_distinct": 15,
+      "degree_distinct": 37,
+      "ratio": 2.466666666666667
+    },
+    {
+      "network": "D. rerio (Zebrafish) Cortex",
+      "corpus": "dev",
+      "n_nodes": 2989,
+      "kcore_distinct": 82,
+      "degree_distinct": 258,
+      "ratio": 3.1463414634146343
+    },
+    {
+      "network": "C. elegans Genetic",
+      "corpus": "dev",
+      "n_nodes": 878,
+      "kcore_distinct": 9,
+      "degree_distinct": 46,
+      "ratio": 5.111111111111111
+    },
+    {
+      "network": "S. cerevisiae Genetic",
+      "corpus": "dev",
+      "n_nodes": 1708,
+      "kcore_distinct": 59,
+      "degree_distinct": 171,
+      "ratio": 2.8983050847457625
+    },
+    {
+      "network": "Slashdot Trust",
+      "corpus": "dev",
+      "n_nodes": 1123,
+      "kcore_distinct": 7,
+      "degree_distinct": 29,
+      "ratio": 4.142857142857143
+    },
+    {
+      "network": "Wikipedia RfA Votes",
+      "corpus": "dev",
+      "n_nodes": 3807,
+      "kcore_distinct": 29,
+      "degree_distinct": 171,
+      "ratio": 5.896551724137931
+    },
+    {
+      "network": "S. cerevisiae High-throughput (SC-HT)",
+      "corpus": "dev",
+      "n_nodes": 1995,
+      "kcore_distinct": 94,
+      "degree_distinct": 262,
+      "ratio": 2.7872340425531914
+    },
+    {
+      "network": "S. cerevisiae Lit-curated (SC-LC)",
+      "corpus": "dev",
+      "n_nodes": 1999,
+      "kcore_distinct": 38,
+      "degree_distinct": 106,
+      "ratio": 2.789473684210526
+    },
+    {
+      "network": "H. sapiens High-throughput (HS-HT)",
+      "corpus": "dev",
+      "n_nodes": 2499,
+      "kcore_distinct": 37,
+      "degree_distinct": 99,
+      "ratio": 2.675675675675676
+    },
+    {
+      "network": "Drosophila Larva Brain",
+      "corpus": "dev",
+      "n_nodes": 2952,
+      "kcore_distinct": 61,
+      "degree_distinct": 204,
+      "ratio": 3.3442622950819674
+    },
+    {
+      "network": "Budapest Human Connectome",
+      "corpus": "dev",
+      "n_nodes": 1015,
+      "kcore_distinct": 77,
+      "degree_distinct": 276,
+      "ratio": 3.5844155844155843
+    },
+    {
+      "network": "C. elegans Synapse (2019)",
+      "corpus": "dev",
+      "n_nodes": 446,
+      "kcore_distinct": 14,
+      "degree_distinct": 57,
+      "ratio": 4.071428571428571
+    },
+    {
+      "network": "Florida Bay Food Web (wet)",
+      "corpus": "dev",
+      "n_nodes": 128,
+      "kcore_distinct": 16,
+      "degree_distinct": 50,
+      "ratio": 3.125
+    },
+    {
+      "network": "Kato Plant-Pollinator",
+      "corpus": "dev",
+      "n_nodes": 768,
+      "kcore_distinct": 5,
+      "degree_distinct": 34,
+      "ratio": 6.8
+    },
+    {
+      "network": "US Airport 500",
+      "corpus": "dev",
+      "n_nodes": 500,
+      "kcore_distinct": 29,
+      "degree_distinct": 64,
+      "ratio": 2.206896551724138
+    },
+    {
+      "network": "Product Space (HS)",
+      "corpus": "dev",
+      "n_nodes": 866,
+      "kcore_distinct": 17,
+      "degree_distinct": 38,
+      "ratio": 2.235294117647059
+    },
+    {
+      "network": "Network Science Collab",
+      "corpus": "dev",
+      "n_nodes": 379,
+      "kcore_distinct": 8,
+      "degree_distinct": 21,
+      "ratio": 2.625
+    },
+    {
+      "network": "Bible Noun Co-occurrence",
+      "corpus": "dev",
+      "n_nodes": 1707,
+      "kcore_distinct": 14,
+      "degree_distinct": 79,
+      "ratio": 5.642857142857143
+    },
+    {
+      "network": "Word Association (EAT)",
+      "corpus": "dev",
+      "n_nodes": 1769,
+      "kcore_distinct": 5,
+      "degree_distinct": 46,
+      "ratio": 9.2
+    },
+    {
+      "network": "UN Migration (2000)",
+      "corpus": "dev",
+      "n_nodes": 232,
+      "kcore_distinct": 43,
+      "degree_distinct": 118,
+      "ratio": 2.744186046511628
+    },
+    {
+      "network": "US Congress Senate 100th",
+      "corpus": "dev",
+      "n_nodes": 101,
+      "kcore_distinct": 12,
+      "degree_distinct": 41,
+      "ratio": 3.4166666666666665
+    },
+    {
+      "network": "IEEE 300-bus Power Grid",
+      "corpus": "dev",
+      "n_nodes": 300,
+      "kcore_distinct": 2,
+      "degree_distinct": 10,
+      "ratio": 5.0
+    },
+    {
+      "network": "uni_email",
+      "corpus": "expanded",
+      "n_nodes": 1133,
+      "kcore_distinct": 11,
+      "degree_distinct": 48,
+      "ratio": 4.363636363636363
+    },
+    {
+      "network": "dnc",
+      "corpus": "expanded",
+      "n_nodes": 849,
+      "kcore_distinct": 44,
+      "degree_distinct": 124,
+      "ratio": 2.8181818181818183
+    },
+    {
+      "network": "cora",
+      "corpus": "expanded",
+      "n_nodes": 103,
+      "kcore_distinct": 2,
+      "degree_distinct": 8,
+      "ratio": 4.0
+    },
+    {
+      "network": "dblp_cite",
+      "corpus": "expanded",
+      "n_nodes": 898,
+      "kcore_distinct": 4,
+      "degree_distinct": 22,
+      "ratio": 5.5
+    },
+    {
+      "network": "jung",
+      "corpus": "expanded",
+      "n_nodes": 1174,
+      "kcore_distinct": 16,
+      "degree_distinct": 53,
+      "ratio": 3.3125
+    },
+    {
+      "network": "linux",
+      "corpus": "expanded",
+      "n_nodes": 357,
+      "kcore_distinct": 3,
+      "degree_distinct": 19,
+      "ratio": 6.333333333333333
+    },
+    {
+      "network": "eu_airlines",
+      "corpus": "expanded",
+      "n_nodes": 417,
+      "kcore_distinct": 21,
+      "degree_distinct": 70,
+      "ratio": 3.3333333333333335
+    },
+    {
+      "network": "euroroad",
+      "corpus": "expanded",
+      "n_nodes": 1039,
+      "kcore_distinct": 2,
+      "degree_distinct": 9,
+      "ratio": 4.5
+    },
+    {
+      "network": "jazz_collab",
+      "corpus": "expanded",
+      "n_nodes": 198,
+      "kcore_distinct": 21,
+      "degree_distinct": 62,
+      "ratio": 2.9523809523809526
+    },
+    {
+      "network": "new_zealand_collab",
+      "corpus": "expanded",
+      "n_nodes": 1463,
+      "kcore_distinct": 16,
+      "degree_distinct": 57,
+      "ratio": 3.5625
+    },
+    {
+      "network": "internet_as",
+      "corpus": "expanded",
+      "n_nodes": 105,
+      "kcore_distinct": 4,
+      "degree_distinct": 13,
+      "ratio": 3.25
+    },
+    {
+      "network": "polblogs",
+      "corpus": "expanded",
+      "n_nodes": 1222,
+      "kcore_distinct": 36,
+      "degree_distinct": 144,
+      "ratio": 4.0
+    },
+    {
+      "network": "foodweb_little_rock",
+      "corpus": "expanded",
+      "n_nodes": 183,
+      "kcore_distinct": 19,
+      "degree_distinct": 55,
+      "ratio": 2.8947368421052633
+    },
+    {
+      "network": "celegans_metabolic",
+      "corpus": "expanded",
+      "n_nodes": 453,
+      "kcore_distinct": 10,
+      "degree_distinct": 40,
+      "ratio": 4.0
+    },
+    {
+      "network": "fao_trade",
+      "corpus": "expanded",
+      "n_nodes": 214,
+      "kcore_distinct": 64,
+      "degree_distinct": 130,
+      "ratio": 2.03125
+    },
+    {
+      "network": "dolphins",
+      "corpus": "expanded",
+      "n_nodes": 62,
+      "kcore_distinct": 4,
+      "degree_distinct": 12,
+      "ratio": 3.0
+    },
+    {
+      "network": "LFR_mu0.1",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 5,
+      "degree_distinct": 29,
+      "ratio": 5.8
+    },
+    {
+      "network": "LFR_mu0.3",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 4,
+      "degree_distinct": 29,
+      "ratio": 7.25
+    },
+    {
+      "network": "LFR_mu0.5",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 3,
+      "degree_distinct": 31,
+      "ratio": 10.333333333333334
+    },
+    {
+      "network": "BA_m2",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 1,
+      "degree_distinct": 23,
+      "ratio": 23.0
+    },
+    {
+      "network": "BA_m5",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 1,
+      "degree_distinct": 37,
+      "ratio": 37.0
+    },
+    {
+      "network": "WS_p0.01",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 1,
+      "degree_distinct": 4,
+      "ratio": 4.0
+    },
+    {
+      "network": "WS_p0.5",
+      "corpus": "expanded",
+      "n_nodes": 500,
+      "kcore_distinct": 2,
+      "degree_distinct": 9,
+      "ratio": 4.5
+    },
+    {
+      "network": "SBM_3x200",
+      "corpus": "expanded",
+      "n_nodes": 600,
+      "kcore_distinct": 6,
+      "degree_distinct": 21,
+      "ratio": 3.5
+    }
+  ],
+  "kcore_distinct_mean": 24.1,
+  "degree_distinct_mean": 82.4,
+  "ratio_mean": 5.1
+}

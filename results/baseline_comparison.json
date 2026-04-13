@@ -1,0 +1,510 @@
+{
+  "methods": [
+    "kcore_sym",
+    "degree_sym",
+    "CN",
+    "AA",
+    "Jaccard_nbr",
+    "PA"
+  ],
+  "n_networks": 31,
+  "per_network": [
+    {
+      "network": "C. elegans Gene Network",
+      "corpus": "dev",
+      "n_nodes": 1995,
+      "n_edges": 43419,
+      "aucs": {
+        "kcore_sym": 0.8172,
+        "degree_sym": 0.7271,
+        "CN": 0.8838,
+        "AA": 0.8867,
+        "Jaccard_nbr": 0.874,
+        "PA": 0.8534
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "C. elegans Protein-Gene",
+      "corpus": "dev",
+      "n_nodes": 1692,
+      "n_edges": 47309,
+      "aucs": {
+        "kcore_sym": 0.8565,
+        "degree_sym": 0.701,
+        "CN": 0.9438,
+        "AA": 0.9478,
+        "Jaccard_nbr": 0.9113,
+        "PA": 0.9217
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "S. cerevisiae (Yeast)",
+      "corpus": "dev",
+      "n_nodes": 1991,
+      "n_edges": 26987,
+      "aucs": {
+        "kcore_sym": 0.7515,
+        "degree_sym": 0.5554,
+        "CN": 0.951,
+        "AA": 0.9593,
+        "Jaccard_nbr": 0.9096,
+        "PA": 0.8638
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "D. melanogaster (Fly) Cortex",
+      "corpus": "dev",
+      "n_nodes": 2928,
+      "n_edges": 42382,
+      "aucs": {
+        "kcore_sym": 0.803,
+        "degree_sym": 0.7043,
+        "CN": 0.945,
+        "AA": 0.9471,
+        "Jaccard_nbr": 0.946,
+        "PA": 0.8702
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "H. sapiens Cortex",
+      "corpus": "dev",
+      "n_nodes": 2895,
+      "n_edges": 47724,
+      "aucs": {
+        "kcore_sym": 0.805,
+        "degree_sym": 0.7195,
+        "CN": 0.9432,
+        "AA": 0.9456,
+        "Jaccard_nbr": 0.9464,
+        "PA": 0.8699
+      },
+      "winner": "Jaccard_nbr"
+    },
+    {
+      "network": "Bitcoin OTC Trust",
+      "corpus": "dev",
+      "n_nodes": 4762,
+      "n_edges": 15717,
+      "aucs": {
+        "kcore_sym": 0.5068,
+        "degree_sym": 0.3084,
+        "CN": 0.8147,
+        "AA": 0.8182,
+        "Jaccard_nbr": 0.7908,
+        "PA": 0.9476
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "Bitcoin Alpha Trust",
+      "corpus": "dev",
+      "n_nodes": 3775,
+      "n_edges": 14120,
+      "aucs": {
+        "kcore_sym": 0.5393,
+        "degree_sym": 0.34,
+        "CN": 0.831,
+        "AA": 0.8342,
+        "Jaccard_nbr": 0.8091,
+        "PA": 0.9398
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "Epinions Trust",
+      "corpus": "dev",
+      "n_nodes": 656,
+      "n_edges": 1054,
+      "aucs": {
+        "kcore_sym": 0.5005,
+        "degree_sym": 0.2899,
+        "CN": 0.6443,
+        "AA": 0.6455,
+        "Jaccard_nbr": 0.6383,
+        "PA": 0.875
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "Yeast PPI (STRING)",
+      "corpus": "dev",
+      "n_nodes": 1746,
+      "n_edges": 12300,
+      "aucs": {
+        "kcore_sym": 0.8011,
+        "degree_sym": 0.7048,
+        "CN": 0.9596,
+        "AA": 0.9612,
+        "Jaccard_nbr": 0.9612,
+        "PA": 0.8387
+      },
+      "winner": "Jaccard_nbr"
+    },
+    {
+      "network": "Mouse PPI (STRING)",
+      "corpus": "dev",
+      "n_nodes": 1180,
+      "n_edges": 3241,
+      "aucs": {
+        "kcore_sym": 0.7476,
+        "degree_sym": 0.62,
+        "CN": 0.8865,
+        "AA": 0.8874,
+        "Jaccard_nbr": 0.8856,
+        "PA": 0.8111
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "D. rerio (Zebrafish) Cortex",
+      "corpus": "dev",
+      "n_nodes": 2989,
+      "n_edges": 71356,
+      "aucs": {
+        "kcore_sym": 0.7843,
+        "degree_sym": 0.7143,
+        "CN": 0.9266,
+        "AA": 0.9307,
+        "Jaccard_nbr": 0.9312,
+        "PA": 0.8632
+      },
+      "winner": "Jaccard_nbr"
+    },
+    {
+      "network": "C. elegans Genetic",
+      "corpus": "dev",
+      "n_nodes": 878,
+      "n_edges": 3181,
+      "aucs": {
+        "kcore_sym": 0.651,
+        "degree_sym": 0.3491,
+        "CN": 0.9464,
+        "AA": 0.9578,
+        "Jaccard_nbr": 0.9082,
+        "PA": 0.88
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "S. cerevisiae Genetic",
+      "corpus": "dev",
+      "n_nodes": 1708,
+      "n_edges": 33982,
+      "aucs": {
+        "kcore_sym": 0.8413,
+        "degree_sym": 0.7452,
+        "CN": 0.9452,
+        "AA": 0.9494,
+        "Jaccard_nbr": 0.9386,
+        "PA": 0.88
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "Slashdot Trust",
+      "corpus": "dev",
+      "n_nodes": 1123,
+      "n_edges": 1779,
+      "aucs": {
+        "kcore_sym": 0.4968,
+        "degree_sym": 0.3287,
+        "CN": 0.5678,
+        "AA": 0.568,
+        "Jaccard_nbr": 0.5666,
+        "PA": 0.8577
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "Wikipedia RfA Votes",
+      "corpus": "dev",
+      "n_nodes": 3807,
+      "n_edges": 33642,
+      "aucs": {
+        "kcore_sym": 0.749,
+        "degree_sym": 0.5624,
+        "CN": 0.9196,
+        "AA": 0.921,
+        "Jaccard_nbr": 0.9099,
+        "PA": 0.9376
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "S. cerevisiae High-throughput (SC-HT)",
+      "corpus": "dev",
+      "n_nodes": 1995,
+      "n_edges": 58238,
+      "aucs": {
+        "kcore_sym": 0.8379,
+        "degree_sym": 0.7346,
+        "CN": 0.9443,
+        "AA": 0.9484,
+        "Jaccard_nbr": 0.9436,
+        "PA": 0.9089
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "S. cerevisiae Lit-curated (SC-LC)",
+      "corpus": "dev",
+      "n_nodes": 1999,
+      "n_edges": 20448,
+      "aucs": {
+        "kcore_sym": 0.7706,
+        "degree_sym": 0.6546,
+        "CN": 0.845,
+        "AA": 0.8484,
+        "Jaccard_nbr": 0.8351,
+        "PA": 0.8637
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "H. sapiens High-throughput (HS-HT)",
+      "corpus": "dev",
+      "n_nodes": 2499,
+      "n_edges": 13650,
+      "aucs": {
+        "kcore_sym": 0.7585,
+        "degree_sym": 0.6484,
+        "CN": 0.8384,
+        "AA": 0.8394,
+        "Jaccard_nbr": 0.8364,
+        "PA": 0.8758
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "Drosophila Larva Brain",
+      "corpus": "dev",
+      "n_nodes": 2952,
+      "n_edges": 95990,
+      "aucs": {
+        "kcore_sym": 0.7997,
+        "degree_sym": 0.6828,
+        "CN": 0.9611,
+        "AA": 0.9644,
+        "Jaccard_nbr": 0.9652,
+        "PA": 0.7671
+      },
+      "winner": "Jaccard_nbr"
+    },
+    {
+      "network": "Budapest Human Connectome",
+      "corpus": "dev",
+      "n_nodes": 1015,
+      "n_edges": 70654,
+      "aucs": {
+        "kcore_sym": 0.7545,
+        "degree_sym": 0.5714,
+        "CN": 0.9716,
+        "AA": 0.9739,
+        "Jaccard_nbr": 0.9743,
+        "PA": 0.7375
+      },
+      "winner": "Jaccard_nbr"
+    },
+    {
+      "network": "C. elegans Synapse (2019)",
+      "corpus": "dev",
+      "n_nodes": 446,
+      "n_edges": 4172,
+      "aucs": {
+        "kcore_sym": 0.7695,
+        "degree_sym": 0.587,
+        "CN": 0.9179,
+        "AA": 0.9229,
+        "Jaccard_nbr": 0.9143,
+        "PA": 0.7638
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "Florida Bay Food Web (wet)",
+      "corpus": "dev",
+      "n_nodes": 128,
+      "n_edges": 2075,
+      "aucs": {
+        "kcore_sym": 0.7034,
+        "degree_sym": 0.5215,
+        "CN": 0.6143,
+        "AA": 0.6169,
+        "Jaccard_nbr": 0.522,
+        "PA": 0.7546
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "Kato Plant-Pollinator",
+      "corpus": "dev",
+      "n_nodes": 768,
+      "n_edges": 1205,
+      "aucs": {
+        "kcore_sym": 0.3159,
+        "degree_sym": 0.1071,
+        "CN": 0.4477,
+        "AA": 0.4477,
+        "Jaccard_nbr": 0.4477,
+        "PA": 0.9688
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "US Airport 500",
+      "corpus": "dev",
+      "n_nodes": 500,
+      "n_edges": 2980,
+      "aucs": {
+        "kcore_sym": 0.6726,
+        "degree_sym": 0.4708,
+        "CN": 0.9367,
+        "AA": 0.947,
+        "Jaccard_nbr": 0.8976,
+        "PA": 0.9272
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "Product Space (HS)",
+      "corpus": "dev",
+      "n_nodes": 866,
+      "n_edges": 2532,
+      "aucs": {
+        "kcore_sym": 0.7001,
+        "degree_sym": 0.6329,
+        "CN": 0.8731,
+        "AA": 0.8734,
+        "Jaccard_nbr": 0.8715,
+        "PA": 0.8513
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "Network Science Collab",
+      "corpus": "dev",
+      "n_nodes": 379,
+      "n_edges": 914,
+      "aucs": {
+        "kcore_sym": 0.7138,
+        "degree_sym": 0.4851,
+        "CN": 0.9733,
+        "AA": 0.9768,
+        "Jaccard_nbr": 0.9686,
+        "PA": 0.7778
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "Bible Noun Co-occurrence",
+      "corpus": "dev",
+      "n_nodes": 1707,
+      "n_edges": 9059,
+      "aucs": {
+        "kcore_sym": 0.6736,
+        "degree_sym": 0.4399,
+        "CN": 0.9852,
+        "AA": 0.9934,
+        "Jaccard_nbr": 0.9706,
+        "PA": 0.8611
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "Word Association (EAT)",
+      "corpus": "dev",
+      "n_nodes": 1769,
+      "n_edges": 4821,
+      "aucs": {
+        "kcore_sym": 0.7095,
+        "degree_sym": 0.5055,
+        "CN": 0.6514,
+        "AA": 0.6523,
+        "Jaccard_nbr": 0.6489,
+        "PA": 0.8424
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "UN Migration (2000)",
+      "corpus": "dev",
+      "n_nodes": 232,
+      "n_edges": 8405,
+      "aucs": {
+        "kcore_sym": 0.7734,
+        "degree_sym": 0.4831,
+        "CN": 0.896,
+        "AA": 0.9047,
+        "Jaccard_nbr": 0.7174,
+        "PA": 0.9028
+      },
+      "winner": "AA"
+    },
+    {
+      "network": "US Congress Senate 100th",
+      "corpus": "dev",
+      "n_nodes": 101,
+      "n_edges": 2143,
+      "aucs": {
+        "kcore_sym": 0.6604,
+        "degree_sym": 0.4668,
+        "CN": 0.7141,
+        "AA": 0.7203,
+        "Jaccard_nbr": 0.6025,
+        "PA": 0.7628
+      },
+      "winner": "PA"
+    },
+    {
+      "network": "IEEE 300-bus Power Grid",
+      "corpus": "dev",
+      "n_nodes": 300,
+      "n_edges": 409,
+      "aucs": {
+        "kcore_sym": 0.6186,
+        "degree_sym": 0.493,
+        "CN": 0.6017,
+        "AA": 0.6012,
+        "Jaccard_nbr": 0.6005,
+        "PA": 0.7
+      },
+      "winner": "PA"
+    }
+  ],
+  "summary": {
+    "kcore_sym": {
+      "mean_auc": 0.7059,
+      "median_auc": 0.749,
+      "wins": 0
+    },
+    "degree_sym": {
+      "mean_auc": 0.5437,
+      "median_auc": 0.5624,
+      "wins": 0
+    },
+    "CN": {
+      "mean_auc": 0.8478,
+      "median_auc": 0.9179,
+      "wins": 0
+    },
+    "AA": {
+      "mean_auc": 0.8513,
+      "median_auc": 0.921,
+      "wins": 14
+    },
+    "Jaccard_nbr": {
+      "mean_auc": 0.8272,
+      "median_auc": 0.8976,
+      "wins": 5
+    },
+    "PA": {
+      "mean_auc": 0.854,
+      "median_auc": 0.8637,
+      "wins": 12
+    }
+  }
+}
